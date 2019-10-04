@@ -977,82 +977,49 @@ div.sku strong{
 }
 .sizes-large span:hover{color:#000;cursor:pointer;}
 
-975
+
 .product.large:hover{
-976
+
   box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0.15); 
-977
 }
  JS
 
 JS Options
-230
     $("body").append('<div class="floating-cart"></div>');    
-231
     var cart = $('div.floating-cart');    
-232
     productCard.clone().appendTo(cart);
-233
     $(cart).css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');    
-234
     setTimeout(function(){$("body").addClass("MakeFloatingCart");}, 800);
-235
     setTimeout(function(){
-236
       $('div.floating-cart').remove();
-237
       $("body").removeClass("MakeFloatingCart");
-238
+
 ​
-239
-​
-240
+
       var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>$39</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";     
-241
+
 ​
-242
       $("#cart .empty").hide();     
-243
       $("#cart").append(cartItem);
-244
       $("#checkout").fadeIn(500);
-245
       
-246
       $("#cart .cart-item").last()
-247
         .addClass("flash")
-248
         .find(".delete-item").click(function(){
-249
           $(this).parent().fadeOut(300, function(){
-250
             $(this).remove();
-251
             if($("#cart .cart-item").size() == 0){
-252
               $("#cart .empty").fadeIn(500);
-253
               $("#checkout").fadeOut(500);
-254
             }
-255
           })
-256
         });
-257
         setTimeout(function(){
-258
-        $("#cart .cart-item").last().removeClass("flash");
-259
+
+    $("#cart .cart-item").last().removeClass("flash");
       }, 10 );
-260
-      
-261
     }, 1000);
-262
   });
-263
 });
 
 Console
