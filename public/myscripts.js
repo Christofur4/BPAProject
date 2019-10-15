@@ -1,5 +1,4 @@
 
-<script> 
 $(document).ready(function(){
 	
 	$(".largeGrid").click(function(){											
@@ -270,4 +269,3 @@ $(document).ready(function(){
       $(this).removeClass("hover");
     }
   );
-  </script>
