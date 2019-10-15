@@ -19,6 +19,7 @@ var Product = mongoose.model('Product',ProductSchema)
 
 
 express()
+  .use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'))
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
