@@ -1,7 +1,6 @@
 const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
-var tools = require('/public/myscripts');
 
 express()
   .use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'))
