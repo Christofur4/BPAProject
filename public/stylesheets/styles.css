@@ -4,7 +4,6 @@
 	font-family: "Open Sans", sans-serif;
 	margin: 0;
 	padding: 0;
-	  overflow-y: auto;
   }
   #wrapper{
 	overflow-y: scroll;
@@ -168,7 +167,6 @@
 	-ms-transform: rotate(45deg); 
    	-webkit-transform: rotate(45deg); 
     transform: rotate(45deg);	
-	-webkit-transition: all 50ms ease-out;
 }
 .checklist a .x.animate{
 	width:4px;
@@ -187,8 +185,7 @@
 	left:3px;	
 	-ms-transform: rotate(13deg); 
    	-webkit-transform: rotate(135deg); 
-    transform: rotate(135deg);	
-	-webkit-transition: all 50ms ease-out;
+    transform: rotate(135deg);
 }
 .checklist a .y.animate{
 	width:8px;
