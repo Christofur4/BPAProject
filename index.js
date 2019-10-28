@@ -3,9 +3,9 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mydb');
+//mongoose.connect('mongodb://localhost:27017/mydb');
 
-//mongoose.connect('mongodb+srv://PS20ATello:tiger2002@cluster0-yo7cb.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb://PS20ATello:tiger2002@cluster0-yo7cb.mongodb.net/bpaprojectdb');
 
 var indexRouter = require('./routes/Product');
 
