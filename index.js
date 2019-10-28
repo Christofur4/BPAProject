@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 var mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/mydb');
 
-mongoose.connect('mongodb://dbuser:dbpassword1@ds339968.mlab.com:39968/heroku_gv1ggzq2');
+mongoose.connect('mongodb://dbadmin:dbpassword1@ds339968.mlab.com:39968/heroku_gv1ggzq2');
 
 var indexRouter = require('./routes/Product');
 
