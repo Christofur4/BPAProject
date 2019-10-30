@@ -64,15 +64,16 @@ CHECKOUT
 <div class="make3D">
 <div class="product-front">
 <div class="shadow"></div>
-<img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" />
+<img src="<%= products[i].Picture %>" alt="" />
 
 <div class="image_overlay"></div>
 <div class="add_to_cart">Add to cart</div>
 <div class="view_gallery">View gallery</div>
 <div class="stats">
 <div class="stats-container">
-<span class="product_price">$39</span>
-<span class="product_name"><%= products[i].Name%></span>
+<span class="product_price"><%= products[i].Price %></span>
+<span class="product_name"><%= products[i].Name %></span>
+<span class="product_Picture"><%= products[i].Picture %></span>
 <p>Play On</p>
 <div class="product-options">
 <strong>SIZES</strong>
