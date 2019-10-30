@@ -58,7 +58,7 @@ CHECKOUT
 <h3></h3>
 </div>
 
-
+<% for (let i = 0; i < products.length; i++) {%>
 <div class="product">
 
 <div class="make3D">
@@ -72,7 +72,7 @@ CHECKOUT
 <div class="stats">
 <div class="stats-container">
 <span class="product_price">$39</span>
-<span class="product_name">Baseball</span>
+<span class="product_name"><%= products[i].Name%></span>
 <p>Play On</p>
 <div class="product-options">
 <strong>SIZES</strong>
@@ -109,7 +109,7 @@ CHECKOUT
 </div>
 </div>
 </div>
-
+<% } %>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="menu.js"></script>
    
