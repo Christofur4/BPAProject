@@ -15,7 +15,7 @@ body {
   padding: 16px;
   font-size: 16px;
   border: none;
-  border: 2px solid #bc13fe; 
+  border: 2px solid black; 
 }
 
 .dropdown {
@@ -48,7 +48,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #bc13fe;
+    background-color: black;
 }
 
 .container {
@@ -65,7 +65,8 @@ background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header
 border-bottom:1px solid #eee;
 }
 
-#header ul{padding:50px 0 0 70px;
+#header ul{
+  padding: 50px 0 0 70px;
 }
 
 #header li{
@@ -87,9 +88,10 @@ border-bottom:1px solid #eee;
   color:#000;
 	cursor:pointer;
 }
+
 .jumbotron {
   background: url('https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/02/mobile-sports-app-SCONTENT-2018.jpg');
-  background-color: #00000;
+  background-color: black;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -98,13 +100,13 @@ border-bottom:1px solid #eee;
 
 .nav {
   margin: 0;
-  padding:20px 50;
-  letter-spacing:1px;
+  padding: 20px 50;
+  letter-spacing: 1px;
 }
 
 .nav li {
   display: inline;
-  color: #00000;
+  color: black;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -131,7 +133,7 @@ border-bottom:1px solid #eee;
   margin-bottom: 80px;
   text-transform: uppercase;
   letter-spacing:1px;
-  text-shadow: 2px 2px #bc13fe;
+  text-shadow: 2px 2px black;
 }
 
 .btn-main {
@@ -145,7 +147,7 @@ border-bottom:1px solid #eee;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing:1px;
- border: 2px solid #bc13fe; 
+  border: 2px solid black; 
 }
 
 
@@ -186,8 +188,8 @@ border-bottom:1px solid #eee;
 }
 
 .btn-default {
-  border: 2px solid #bc13fe; 
-  color:#bc13fe;
+  border: 2px solid black; 
+  color:white;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 10px;
