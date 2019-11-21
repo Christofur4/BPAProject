@@ -4,13 +4,19 @@ body {
   }
   
   .container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 10px;
+    letter-spacing:2px;
   }
+  
   .header {
-    background-color: #333333;
-    }
+  height: 1px;
+  letter-spacing: 1px;
+  background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1400px -2px no-repeat;
+  border-bottom:1px solid #eee;
+   text-align: left;
+  }
 
   .jumbotron {
   background-image: url('https://cdn.pixabay.com/photo/2018/10/15/12/04/soccer-3748801_960_720.jpg');
