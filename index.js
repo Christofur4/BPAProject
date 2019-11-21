@@ -9,6 +9,7 @@ mongoose.connect('mongodb://dbadmin:dbpassword1@ds339968.mlab.com:39968/heroku_g
 
 var indexRouter = require('./routes/Product');
 
+
 express()
   .use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'))
   .use(express.static(path.join(__dirname, 'public')))
@@ -18,5 +19,4 @@ express()
   //.get('/', (req, res) => res.render('pages/index'))
   .use('/', indexRouter)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
-
 

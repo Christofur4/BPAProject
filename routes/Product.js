@@ -16,6 +16,21 @@ router.get('/', function(req, res, next) {
     });
   });
 
+  router.get('/checkout', function(req, res, next) {
+    //var successMsg=req.flash('success')[0];
+    Product.find(function(err, products){
+      console.log("I am here")
+    /*  var Numberatatime=[];
+      var Size=3;
+      for(var i=0;i<docs.length;i+=Size){
+        Numberatatime.push(docs.slice(i,i + Size));
+      }
+    */
+   res.render('pages/checkout', { title: 'Shopping Cart', products: products });
+    });
+  });
+
+
   router.get('/product', function(req, res, next) {
     //var successMsg=req.flash('success')[0];
     Product.find(function(err, products){
@@ -31,3 +46,4 @@ router.get('/', function(req, res, next) {
   });
 
   module.exports = router;
+

@@ -1,11 +1,10 @@
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
 body {
+ 	margin: 0;
+ 	padding: 0;
+  	letter-spacing:1px;
+  	overflow-y: auto;
 	font-family: "Open Sans", sans-serif;
-  overflow-x : hidden;
+  	overflow-x : hidden;
 }
 
 #wrapper{
@@ -14,35 +13,29 @@ body {
 	background:#fff;
 }
 
-#header{
-	height:92px;
-	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1448px -2px no-repeat;
-	border-bottom:1px solid #eee;
+.dropbutton {
+  
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
 }
 
-#header ul{
-	padding:33px 0 0 45px;
+
+
+#info{
+	position: absolute;
+	top: 20px;
+	left: 676px;
+	text-align: center;
+	width: 413px;
 }
 
-#header li{
-	list-style:none;
-	float:left;
-	margin-right:30px;
-}
-
-#header li a{
-	font-weight:700;
-	color:#333;
-	font-size:14px;
+#info a{
 	text-decoration:none;
-	text-transform:uppercase;
-	letter-spacing:1px;
 }
 
-#headerli a:hover{
-	color:#000;
-	cursor:pointer;
-}
 
 #grid-selector{
 	height: 10px;
@@ -630,24 +623,6 @@ body.MakeFloatingCart div.cart-icon-bottom{
 	cursor:pointer
 }
 
-#info{
-	position: absolute;
-	top: 20px;
-	left: 676px;
-	text-align: center;
-	width: 413px;
-}
-
-#info p{
-	font-size:15px;
-	padding:3px;
-	color:#b1b1b3
-}
-
-#info a{
-	text-decoration:none;
-}
-
 #checkout{
 	border: 2px solid #5ff7d2;
 	font-size: 13px;
@@ -678,31 +653,50 @@ body.MakeFloatingCart div.cart-icon-bottom{
 	width:100%;
 }
 
-.info-large{
-	display:none;
-	position: absolute;
-	top: 0;
-	left: 0px;
-	padding: 42px;
-	width: 245px;
-	height: 395px;
-	-webkit-transition: all 500ms ease-out;
-	-moz-transition: all 300ms ease-out;
-	-ms-transition: all 300ms ease-out;
-	-o-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 40px;
+    padding: 0 40px;
+    letter-spacing:1px;
+
+  }
+  .supporting .col {
+    width: 100%;
+    letter-spacing:1px;
+  }
+
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  letter-spacing: 1px;
 }
 
-.large .info-large{
-	left: 310px;
+.fa:hover {
+    opacity: 0.7;
+  letter-spacing:1px;
 }
 
-.info-large h4{
-	text-transform:uppercase;
-	font-size:28px;
-	color:#000;
-	font-weight:400;
-	padding:0;
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  letter-spacing: 1px;
 }
 
 div.sku{
