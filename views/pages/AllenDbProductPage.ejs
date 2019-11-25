@@ -2,43 +2,31 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
-
+ 
 </head>
-
+ 
 <body>
-
+ 
   <% include ../partials/nav.ejs %>
-
+ 
   <script src="/public/myscripts.js"></script>
-
-  <header> 
-    <div id="header">
-      <h1>
-      </h1>
-      
-      <button onclick="myFunction()" class="dropbutton"> <a href="/">Epic Wins</a></button>
-      <button onclick="myFunction()" class="dropbutton"> <a href="/product">Product</a></button>
-      <button onclick="myFunction()" class="dropbutton">Contact</button>
-      <button onclick="myFunction()" class="dropbutton">Sign Up</button>
-      </div>
-    <h1></h1>
-    <header>
-
+ 
+ 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <div id="wrapper">
 <div class="cart-icon-top">
 </div>
-
+ 
 <div class="cart-icon-bottom">
 </div>
-
+ 
 <div id="checkout">
   <a href="/checkout"> CHECKOUT  </a>
 </div>
-
+ 
 <div id="info">
-
-
+ 
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <a href="https://www.facebook.com/wins.sporting.5" class="fa fa-facebook"></a>
@@ -48,26 +36,24 @@
   </div>
   
 <h1></h1>
-
+ 
   <div id="header">
   
     <button onclick="myFunction()" class="dropbutton"> <a href="/">Epic Wins</a></button>
     <button onclick="myFunction()" class="dropbutton"> <a href="/product">Product</a></button>
     <button onclick="myFunction()" class="dropbutton">Contact</button>
     <button onclick="myFunction()" class="dropbutton">Sign Up</button>
-
+ 
     </div>
-
+ 
 <h1></h1>
   
-</div>
-
 <div id="sidebar">
 <h3>CART</h3>
 <div id="cart">
 <span class="empty">No items in cart.</span>
 </div>
-
+ 
 <h3></h3>
 <div class="checklist categories">
 <ul>
@@ -76,15 +62,15 @@
 </div>
 <h3></h3>
 </div>
-
+ 
 <% for (let i = 0; i < products.length; i++) {%>
 <div class="product">
-
+ 
 <div class="make3D">
 <div class="product-front">
 <div class="shadow"></div>
 <img src="<%= products[i].Picture %>" alt="" />
-
+ 
 <div class="image_overlay"></div>
 <div class="add_to_cart">Add to cart</div>
 <div class="view_gallery">View gallery</div>
@@ -92,7 +78,7 @@
 <div class="stats-container">
 <span class="product_price">$<%= products[i].Price %></span>
 <span class="product_name"><%= products[i].Name %></span>
-
+ 
   <p>Play On</p>
 <div class="product-options">
 <strong>SIZES</strong>
@@ -101,12 +87,12 @@
 </div>
 </div>
 </div>
-
+ 
 <div class="product-back">
 <div class="shadow"></div>
 <div class="carousel">
 <ul class="carousel-container">
-
+ 
 <li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
 <li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
 <li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
@@ -130,4 +116,3 @@
 <% } %>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="menu.js"></script>
-   
