@@ -7,11 +7,9 @@ body {
  
 }
 input[type=texts]:focus, select, textarea {
-  background-color: #ddd;
   outline: none;
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -35,7 +33,7 @@ input[type=submit]:focus {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: white;
   padding-top: 50px;
 
 }
@@ -57,13 +55,14 @@ input[type=submit]:focus {
 
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: black;
   outline: none;
 
 }
 
 .dropbtn {
-  
+  margin: 0;
+  margin-left: 10px;
   border: 2px solid black;
   background-color: white;
   color: black;
@@ -87,6 +86,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .modal {
+  color: black;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -95,15 +95,16 @@ input[type=text]:focus, input[type=password]:focus {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: white;
   padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
+  color: black;
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  border: 1px solid white;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
@@ -120,12 +121,12 @@ hr {
   top: 15px;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: black;
 }
 
 .close:hover,
 .close:focus {
-  color: #f44336;
+
   cursor: pointer;
 }
 
@@ -155,7 +156,7 @@ hr {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px black (0,0,0,0.2);
   z-index: 1;
 }
 
@@ -188,12 +189,12 @@ hr {
 .header {
 height: 1px;
 letter-spacing:1px;
-background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1448px -2px no-repeat;
-border-bottom:1px solid #eee;
+background: white url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1448px -2px no-repeat;
+border-bottom:1px solid white;
 }
 
 .jumbotron {
-  background: url('https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/02/mobile-sports-app-SCONTENT-2018.jpg');
+  background: url('https://live.staticflickr.com/1724/42342628061_7e9909b548_b.jpg');
   background-color: black;
   background-size: cover;
   background-position: center center;
@@ -203,6 +204,7 @@ border-bottom:1px solid #eee;
 
 .nav {
   margin: 0;
+  margin-left: -250px;
   padding: 20px 50;
   letter-spacing: 1px;
 }
@@ -224,11 +226,10 @@ border-bottom:1px solid #eee;
   top: 180px;
   text-align: center;
   letter-spacing:1px;
-  text-shadow: red
 }
 
 .main h1 {
-  color: white;
+  color: black;
   font-family: georgia;
   font-weight: 600;
   font-size: 70px;
@@ -240,8 +241,8 @@ border-bottom:1px solid #eee;
 }
 
 .btn-main {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -291,8 +292,9 @@ border-bottom:1px solid #eee;
 }
 
 .btn-default {
-  border: 2px solid black; 
-  color: black;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 10px;
@@ -302,6 +304,7 @@ border-bottom:1px solid #eee;
   margin-bottom: 20px;
   padding: 10px 70px;
   letter-spacing:1px;
+  
 }
 
 .clearfix {
@@ -310,7 +313,7 @@ border-bottom:1px solid #eee;
 }
 
 .footer {
-  background-color: #333;
+  background-color: black;
   color: #fff;
   padding: 30px 0;
   letter-spacing:1px;
