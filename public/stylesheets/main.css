@@ -27,8 +27,10 @@ body {
   }
   
   .nav {
-  margin: 0;
-  padding: 20px 0;
+  
+    margin: 0;
+    margin-left: -250px;
+    padding: 20px 50;
   }
   
   .nav li {
