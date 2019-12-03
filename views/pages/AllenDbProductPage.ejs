@@ -4,14 +4,15 @@
   <% include ../partials/header.ejs %>
  
 </head>
- 
+
 <body>
- 
+  
+<!-- Header -->
   <% include ../partials/nav.ejs %>
  
   <script src="/public/myscripts.js"></script>
  
- 
+ <!-- Adding stuff to cart  -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <div id="wrapper">
 <div class="cart-icon-top">
@@ -19,7 +20,8 @@
  
 <div class="cart-icon-bottom">
 </div>
- 
+
+ <!-- Going into the checkout page -->
 <div id="checkout">
   <a href="/checkout"> CHECKOUT  </a>
 </div>
@@ -38,7 +40,7 @@
 <h1></h1>
  
 <h1></h1>
-  
+   <!-- Adding stuff to cart  -->
 <div id="sidebar">
 <h3>CART</h3>
 <div id="cart">
@@ -55,6 +57,8 @@
 </div>
  
 <% for (let i = 0; i < products.length; i++) {%>
+
+   <!-- Info on different products  -->
 <div class="product">
  
 <div class="make3D">
@@ -80,13 +84,10 @@
 </div>
  
 <div class="product-back">
-<div class="shadow"></div>
 <div class="carousel">
 <ul class="carousel-container">
- 
-<li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
-<li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
-<li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
+
+
 </ul>
 <div class="arrows-perspective">
 <div class="carouselPrev">
@@ -98,8 +99,6 @@
 <div class="x"></div>
 </div>
 </div>
-</div>
-<div class="flip-back">
 </div>
 </div>
 </div>

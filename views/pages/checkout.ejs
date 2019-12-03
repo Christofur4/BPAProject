@@ -5,7 +5,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/checkout.css" />
 </head>
+
 <body>
+
+ <!-- Get here after checking out from the product page -->
 
 <h2> Checkout Here</h2>
 
@@ -14,6 +17,8 @@
     <div class="container">
       <form action="/action_page.php">
       
+        <!-- Shipping details -->
+
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
@@ -37,7 +42,7 @@
               </div>
             </div>
           </div>
-
+              <!-- Payment info -->
           <div class="col-50">
             <h3>Payment</h3>
             <label for="fname">Accepted Cards</label>
@@ -69,6 +74,9 @@
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
+
+          <!-- Finish checking out here and go back to main page -->
+
         <a href="/" input type="submit" value="Continue to checkout" class="btn"> Thank you for shopping! </a>
       </form>
     </div>
