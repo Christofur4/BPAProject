@@ -1,3 +1,4 @@
+/* CSS for Checkout page*/
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -9,9 +10,9 @@ body {
   }
   
   .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     margin: 0 -16px;
   }
