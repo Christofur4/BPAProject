@@ -614,6 +614,7 @@ body.MakeFloatingCart div.cart-icon-bottom{
    width: 100%;
 }
 
+/* Social Media links*/
 @media (max-width: 500px) {
  .main h1 {
    font-size: 40px;
