@@ -58,7 +58,7 @@ input[type=submit]:focus {
 
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: black;
+  background-color: white;
   outline: none;
 }
 
@@ -114,6 +114,7 @@ input[type=text]:focus, input[type=password]:focus {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+
 }
 
 /* The Close Button (x) */
