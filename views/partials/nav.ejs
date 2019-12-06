@@ -1,32 +1,107 @@
   <!-- Partial header for the website pages -->
   
+  <!-- CSS start -->
+  <style>
+  input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+.dropbutton {
+  margin: 0;
+  margin-left: 10px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  opacity: 1;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to elements */
+.element {
+  padding: 16px;
+}
+
+.modal {
+  color: black;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color: black;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid white;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+}
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 600px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+  
+  </style>
+  <!-- CSS end -->
+  
+  
+  <!-- HTML start -->
 <button onclick="myFunction()" class="dropbutton"> <a href="/">Epic Wins</a></button>
 <button onclick="myFunction()" class="dropbutton"> <a href="/product">Product</a></button>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="dropbutton">Contacts</button>
-<div id="id01"class="contacts">
-  <form action="/action_page.php">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <p>Stop by our shop, or leave us a message:</p>
-    
-  <div class="right">
-    <div class="left">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="texts" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="texts" id="lname" name="lastname" placeholder="Your last name..">
-       
- <label for="subject">Subject</label>
-        
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="submit">Submit</button>
-      </form>
-      
-    </div>
-  </div>
-</div>
+<button onclick="myFunction()" class="dropbutton"> <a href="#">Contacts</a></button>
 
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="dropbutton"> <a href="#">Sign Up</a></button>
   
@@ -62,3 +137,4 @@
     </div>
   </form>
   </div>
+ <!-- HTML ends -->
