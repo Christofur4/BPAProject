@@ -9,24 +9,25 @@ body {
   overflow-x: hidden;
 }
 
+/* CSS for contacts sheet */
+
 input[type=texts]:focus, select, textarea {
+  background-color: #ddd;
   outline: none;
   width: 100%;
   padding: 12px;
+  border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
 input[type=submit]:focus {
-  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
 }
 
-
-/* Styleing the contact section */
 .contacts {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -38,11 +39,10 @@ input[type=submit]:focus {
   overflow: auto; /* Enable scroll if needed */
   background-color: white;
   padding-top: 50px;
-
 }
 
-/* Making two columns that float next to each other */
-.column {
+/* Create two columns that float next to eachother */
+.left {
   float: left;
   width: 50%;
   margin-top: 6px;
@@ -50,13 +50,13 @@ input[type=submit]:focus {
 }
 
 /* Clear floats after the columns */
-.row:after {
+.right:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
+/* CSS for sign up sheet*/
 input[type=text]:focus, input[type=password]:focus {
   background-color: white;
   outline: none;
@@ -81,6 +81,7 @@ input[type=text]:focus, input[type=password]:focus {
   float: left;
   width: 50%;
 }
+
 
 /* Add padding to elements */
 .element {
