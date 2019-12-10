@@ -10,22 +10,115 @@ body {
  
 }
 
+.dropbutton {
+   margin: 0;
+   margin-left: 10px;
+   border: 2px solid black;
+   background-color: white;
+   color: black;
+   padding: 16px;
+   font-size: 16px;
+   cursor: pointer;
+ }
+
 #wrapper{
    height: 1153px;
    width: 1643px;
    background:#fff;
 }
 
-.dropbutton {
- margin: 0;
- margin-left: 10px;
- border: 2px solid black;
- background-color: white;
- color: black;
- padding: 16px;
- font-size: 16px;
-}
+.nav {
+   margin: 0;
+   margin-left: -250px;
+   padding: 20px 50;
+   letter-spacing: 1px;
+ }
+ 
+ .nav li {
+   display: inline;
+   color: black;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 600;
+   font-size: 12px;
+   text-transform: uppercase;
+   margin-right: 25px;
+   letter-spacing: 1px;
+   
+ }
 
+ .button-main {
+   background-color: black;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 600;
+   font-size: 18px;
+   letter-spacing: 1.3px;
+   padding: 16px 40px;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   border: 2px solid black; 
+ }
+ 
+ 
+ .supporting {
+   padding-top: 2px;
+   padding-bottom: 100px;
+   letter-spacing: 1px;
+   
+ }
+ 
+ .supporting .col {
+   float: left;
+   width: 33%;
+   font-family: 'Raleway', sans-serif;
+   text-align: center;
+   letter-spacing: 1px;
+ }
+ 
+ .supporting img {
+   height: 230px;
+ }
+ 
+ .supporting h2 {
+   font-weight: 600;
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   
+ }
+ 
+ .supporting p {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   padding: 0 50px;
+   margin-bottom: 40px;
+   letter-spacing: 1px;
+ }
+ 
+ .button-default {
+   border: 2px solid black;
+   color: white;
+   background-color: black;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 800;
+   font-size: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   display: inline-block;
+   margin-bottom: 20px;
+   padding: 10px 70px;
+   letter-spacing: 1px;
+   
+ }
+ 
+ .clearfix {
+   content: "";
+   clear: both;
+   letter-spacing: 1px;
+   display: table;
+ }
 
 #info{
    position: absolute;
@@ -234,6 +327,13 @@ div.large .make3D{
 .large div.flip-back{
    display: none;
 }
+
+.container {
+   max-width: 1040px;
+   margin: 0 auto;
+   padding: 0 10px;
+   letter-spacing:2px;
+ }
 
 .stats-container{
    background: #fff;
