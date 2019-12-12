@@ -8,17 +8,14 @@ body {
 }
 
 * {box-sizing: border-box}
+
 h1 {
   text-align: center;
-  font-size: 30px;
-  margin: 2;
+  font-size: 40px;
 }
 p {
   text-align: center;
-  font-size: 15px;
-  margin: 2;
 }
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -52,25 +49,18 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: black;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
 
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
   background-color: black;
+  color: white;
+}
+
+.signupbtn{
+padding: 14px 20px;
+background-color: black;
+color: white;
 }
 
 /* Float cancel and signup buttons and add an equal width */
