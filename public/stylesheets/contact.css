@@ -10,46 +10,37 @@ body {
 
 h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
+  margin: 2;
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-  input[type=submit] {
-    text-align: center;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+input[type=submit] {
+  color: white;
+  background-color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
 
-  .btn {
-    align-content: center;
-    text-align: center;
-    color: white;
-    background-color: black;
-    padding: 12px;
-    width: 100%;
-    cursor: pointer;
-    font-size: 17px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-    .contacts {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.contacts {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
