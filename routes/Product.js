@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Product=require('../models/Product');
 
+
 router.get('/', function(req, res, next) {
     //var successMsg=req.flash('success')[0];
     Product.find(function(err, products){
@@ -65,3 +66,4 @@ router.get('/', function(req, res, next) {
 
   module.exports = router;
 
+  module.exports = router;
