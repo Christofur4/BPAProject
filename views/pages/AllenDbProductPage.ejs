@@ -2,15 +2,16 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
- 
 </head>
 
 <body>
-  
 <!-- Header -->
   <% include ../partials/nav.ejs %>
- 
 
+  <div">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Cart (<span class="total-count"></span>)</button>
+    <button class="clear-cart btn btn-danger">Clear Cart</button>
+  </div>
 
  <!-- Adding stuff to cart  -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
@@ -29,19 +30,17 @@
 <!-- Social Media Links -->
 <div id="info">
  
- 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <a href="https://www.facebook.com/wins.sporting.5" class="fa fa-facebook"></a>
   <a href="https://www.twitter.com/EpicwinsO" class="fa fa-twitter"></a>
   <a href="https://www.instagram.com/epicwins_offical/" class="fa fa-instagram"></a>
   
-  </div>
-  
-<h1></h1>
- 
-<h1></h1>
-   <!-- Adding stuff to cart  -->
+</div>
+
+
+
+<!-- Adding stuff to cart  -->
 <div id="sidebar">
 <h3>CART</h3>
 <div id="cart">
@@ -64,64 +63,42 @@
    <!-- Info on different products  -->
 <div class="product">
  
-<div class="make3D">
-<div class="product-front">
-<div class="shadow"></div>
-<img src="<%= products[i].Picture %>" alt="" />
- 
-<!-- Getting products to add to cart  -->
-<div class="image_overlay"></div>
-<a href="#" data-name="<%= products[i].Name %>" data-price="<%= products[i].Price %>" class="add_to_cart btn btn-primary">Add to cart</a>
+  <div class="make3D">
+    <div class="product-front">
+      <div class="shadow"></div>
+      <img src="<%= products[i].Picture %>" alt="" />
+      
+        <!-- Getting products to add to cart  -->
+        <div class="image_overlay"></div>
+        <a href="#" data-name="<%= products[i].Name %>" data-price="<%= products[i].Price %>" class="add_to_cart btn btn-primary">Add to cart</a>
 
 
-<div class="stats">
-<div class="stats-container">
-<span class="product_price">$<%= products[i].Price %></span>
-<span class="product_name"><%= products[i].Name %></span>
- 
-<!-- Product card  -->
-<p>Play On</p>
-<div class="product-options">
-<strong>SIZES</strong>
-<span>One Size</span>
-</div>
-</div>
-</div>
-</div>
- 
-<div class="product-back">
-<div class="carousel">
-<ul class="carousel-container">
+        <div class="stats">
+          <div class="stats-container">
+          <span class="product_price">$<%= products[i].Price %></span>
+          <span class="product_name"><%= products[i].Name %></span>
+          
+          <!-- Product card  -->
+          <p>Play On</p>
+          <div class="product-options">
+          <strong>SIZES</strong>
+          <span>One Size</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-</ul>
-<div class="arrows-perspective">
-<div class="carouselPrev">
-<div class="y"></div>
-<div class="x"></div>
-</div>
-<div class="carouselNext">
-<div class="y"></div>
-<div class="x"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <% } %>
 
-<div class="row">
-  <div class="col">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
-</div>
 
- <!-- Modal -->
- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Cart</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -138,13 +115,7 @@
       </div>
     </div>
   </div>
-</div> 
-
-
-
-
-
-
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="menu.js"></script>
+
