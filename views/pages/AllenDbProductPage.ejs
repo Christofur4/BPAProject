@@ -10,8 +10,8 @@
 <!-- Header -->
   <% include ../partials/nav.ejs %>
  
-  <script src="/public/myscripts.js"></script>
- 
+
+
  <!-- Adding stuff to cart  -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <div id="wrapper">
@@ -46,7 +46,9 @@
 <div id="cart">
 <span class="empty">No items in cart.</span>
 </div>
- 
+
+<div class="add_to_cart">Add to cart</div>
+
 <h3></h3>
 <div class="checklist categories">
 <ul>
@@ -67,7 +69,8 @@
 <img src="<%= products[i].Picture %>" alt="" />
  
 <div class="image_overlay"></div>
-<div class="add_to_cart">Add to cart</div>
+<a href="#" data-name="<%= products[i].Name %>" data-price="<%= products[i].Price %>" class="add_to_cart btn btn-primary">Add to cart</a>
+
 
 <div class="stats">
 <div class="stats-container">
@@ -104,5 +107,41 @@
 </div>
 </div>
 <% } %>
+
+<div class="row">
+  <div class="col">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+</div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="menu.js"></script>
