@@ -3,9 +3,12 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mydb');
+//mongoose.connect('mongodb://localhost:27017/mydb');
+
+mongoose.connect('mongodb://dbadmin:dbpassword1@ds339968.mlab.com:39968/heroku_gv1ggzq2');
 
 var indexRouter = require('./routes/Product');
+
 
 express()
   .use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'))
@@ -16,5 +19,4 @@ express()
   //.get('/', (req, res) => res.render('pages/index'))
   .use('/', indexRouter)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
-
 

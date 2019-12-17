@@ -1,20 +1,32 @@
-<!DOCTYPE html>
 <html>
+  <!-- Home Page-->
 <head>
-  <% include ../partials/header.ejs %>
- 
 
-
+<meta charset="utf-8">
+<title>Epic Wins</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/EpicWins.css" />
 
 </head>
 
 <body>
+    <!-- Header -->
 
   <% include ../partials/nav.ejs %>
 
-  <script src="/public/myscripts.js"></script>
+<div class="jumbotron">
+  <div class="container">
+    <div class="main">
+      <!-- Button directs you to product page --> 
+      <a href="/product" class="button-main"> EVERYTHING YOU WANT </a>
+      <h1></h1>
+      <h1> 50% OFF </h1>
+      <h1> SALE ENDS TODAY </h1>
+      <h2> HURRY AND SHOP NOW!!!</h2>
+      <h2> FREE SHIPPING ON YOUR FIRST ORDER</h2>
 
+  <!-- Social Media --> 
 
+<<<<<<< HEAD
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
   
   <div id="wrapper">
@@ -58,93 +70,55 @@ target="_blank">Twitter</a> |
     <div class="checklist colors">       
     </div>
     <div class="checklist sizes">     
+=======
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="https://www.facebook.com/wins.sporting.5" class="fa fa-facebook"></a>
+<a href="https://twitter.com/EpicwinsO" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/epicwins_offical/" class="fa fa-instagram"></a>
+      </div>
+>>>>>>> 825f71752a53ffe5cfe4fd3be0c6cc1a3e62d289
     </div>
-</div>
-   
-  
-    <div id="grid-selector">
-         <div id="grid-menu">
-              View:
-             <ul>           	   
-                 <li class="largeGrid"><a href=""></a></li>
-                 <li class="smallGrid"><a class="active" href=""></a></li>
-   </ul>
   </div>
-  <!--card starts here-->
 
-  <% for (let i = 0; i < products.length; i++){ %>
-    <p><%= products[i].Name %></p>
-    <p><%= products[i].Picture %></p>
-    <p><%= products[i].Price %></p>
+  <!-- More options to go to product page -->
+  <div class="supporting">
+    <div class="container">
+      <div class="col">
+        <img src="https://garagegympower.com/wp-content/uploads/2018/01/workout-shoes-close-up.jpg">
+        <h2> THE BEST BRANDS</h2>
+        <p>APPAREL AND FOOTWEAR</p>
+        <a href="/product" class="button-default">Go</a>
+        
+      </div>
+      <div class="col">
+          <img src="https://i2.nicepik.com/files/57/686/481/fire-bbq-barb-barbecue.jpg">
+        <h2>THE BEST TEAMS</h2>
+        <p> LOWER PRICES </p>
+        <a href="/product" class="button-default">Go</a>
+      </div>
+      <div class="col">
+          <img src="https://sports-isao.org/site/wp-content/uploads/2016/10/1442948352391.jpg">
+        <h2>THE BEST SPORTS</h2>
+        <p>ALWAYS ROOTING FOR YOU</p>
+        <a href="/product" class="button-default">Go</a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
 
-    <!--Html card goes here    -->
-   <div class="product">
- 
+  <!-- footer -->
 
-
-     <div class="make3D">
-     <div class="product-front">
-         <div class="shadow"></div>
-         <img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" />
+  <div class="footer">
+    <div class="container">
+      <p style="text-align: center;">&copy; EpicWins 2019-2020</p>
+    </div>
+  </div>
   
-   <div class="image_overlay"></div>
-        <div class="add_to_cart">Add to cart</div>
-                  <div class="view_gallery">View gallery</div>
-       <div class="stats">        	
-       <div class="stats-container">
-                          <span class="product_price">$39</span>
-                          <span class="product_name">Baseball</span>    
-                          <p>Play On</p>                       
-  <div class="product-options">
-       <strong>SIZES</strong>
-       <span>One Size</span>
-       <strong>COLORS</strong>
-       <div class="colors">
-       <div class="c-blue"><span></span></div>
-                              
-<div class="c-red"><span></span></div>
-      <div class="c-green"><span></span></div>
-      </div>
-      </div>                       
-      </div>                         
-      </div>
-      </div>
-              
-      <div class="product-back">
-      <div class="shadow"></div>
-      <div class="carousel">
+</body>
 
-<ul class="carousel-container">
-             
-<li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
-<li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
-<li><img src="https://live.staticflickr.com/8659/16173880801_6ce4e19ccf_b.jpg" alt="" /></li>
-</ul>
-      <div class="arrows-perspective">
-      <div class="carouselPrev">
-      <div class="y"></div>
-      <div class="x"></div>
-      </div>
-      <div class="carouselNext">
-      <div class="y"></div>
-      <div class="x"></div>
-      </div>
-      </div>
-      </div>
-      <div class="flip-back">
-      <div class="cy"></div>
-      <div class="cx"></div>
-      </div>
-      </div>	  
-      </div>	
-      </div>
-      
-<!--Card ends here-->
-      <% } %>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="menu.js"></script>
-  
-  
-   
+</html>
 
+<!-- Main Page Credit:  
+Credits to: w3schools.com 
+-->

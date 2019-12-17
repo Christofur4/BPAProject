@@ -43,7 +43,7 @@ $('.product').each(function(i, el){
 
  // Lift card and show stats on Mouseover
  $(el).find('.make3D').hover(function(){
-         $(this).parent().css('z-index', "20");
+         $(this).parent().css('z-index', "39");
          $(this).addClass('animate');
          $(this).find('div.carouselNext, div.carouselPrev').addClass('visible');			
       }, function(){
@@ -107,52 +107,6 @@ $('.product').each(function(i, el){
  makeCarousel(el);
 });
 
-$('.add-cart-large').each(function(i, el){
- $(el).click(function(){
-     var carousel = $(this).parent().parent().find(".carousel-container");
-     var img = carousel.find('img').eq(carousel.attr("rel"))[0];						
-     var position = $(img).offset();	
-
-     var productName = $(this).parent().find('h4').get(0).innerHTML;				
-
-     $("body").append('<div class="floating-cart"></div>');		
-     var cart = $('div.floating-cart');		
-     $("<img src='"+img.src+"' class='floating-image-large' />").appendTo(cart);
-     
-     $(cart).css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');		
-     setTimeout(function(){$("body").addClass("MakeFloatingCart");}, 800);
-     
-     setTimeout(function(){
-     $('div.floating-cart').remove();
-     $("body").removeClass("MakeFloatingCart");
-
-
-     var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+img.src+"' alt='' /></div><span>"+productName+"</span><strong>$39</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
-
-     $("#cart .empty").hide();			
-     $("#cart").append(cartItem);
-     $("#checkout").fadeIn(500);
-     
-     $("#cart .cart-item").last()
-         .addClass("flash")
-         .find(".delete-item").click(function(){
-             $(this).parent().fadeOut(300, function(){
-                 $(this).remove();
-                 if($("#cart .cart-item").size() == 0){
-                     $("#cart .empty").fadeIn(500);
-                     $("#checkout").fadeOut(500);
-                 }
-             })
-         });
-      setTimeout(function(){
-         $("#cart .cart-item").last().removeClass("flash");
-     }, 10 );
-     
- }, 1000);
-     
-     
- });
-})
 
 /* ----  Image Gallery Carousel   ---- */
 function makeCarousel(el){
@@ -223,6 +177,9 @@ $('.sizes a span, .categories a span').each(function(i, el){
 });
 
 $('.add_to_cart').click(function(){
+
+    console.log("in to cart old")
+
  var productCard = $(this).parent();
  var position = productCard.offset();
  var productImage = $(productCard).find('img').get(0).src;
