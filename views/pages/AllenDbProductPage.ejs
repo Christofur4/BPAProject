@@ -4,14 +4,13 @@
   <% include ../partials/header.ejs %>
 </head>
 
+<html></html>
+
+
 <body>
 <!-- Header -->
   <% include ../partials/nav.ejs %>
 
-  <div">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Cart (<span class="total-count"></span>)</button>
-    <button class="clear-cart btn btn-danger">Clear Cart</button>
-  </div>
 
  <!-- Adding stuff to cart  -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
@@ -23,29 +22,22 @@
 </div>
 
  <!-- Going into the checkout page -->
-<div id="checkout">
-  <a href="/checkout"> CHECKOUT  </a>
-</div>
  
 <!-- Social Media Links -->
 <div id="info">
  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <a href="https://www.facebook.com/wins.sporting.5" class="fa fa-facebook"></a>
-  <a href="https://www.twitter.com/EpicwinsO" class="fa fa-twitter"></a>
-  <a href="https://www.instagram.com/epicwins_offical/" class="fa fa-instagram"></a>
   
 </div>
 
 
-
 <!-- Adding stuff to cart  -->
 <div id="sidebar">
-<h3>CART</h3>
-<div id="cart">
-<span class="empty">No items in cart.</span>
-</div>
+  <div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Cart (<span class="total-count"></span>)</button>
+    <button class="clear-cart btn btn-danger">Clear Cart</button>
+  </div>
 
 <div class="add_to_cart">Add to cart</div>
 
@@ -111,7 +103,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Order now</button>
+        <button type="button" class="btn btn-primary"><a href="/checkout">Checkout</a></button>
       </div>
     </div>
   </div>
