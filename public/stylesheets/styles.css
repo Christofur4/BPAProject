@@ -10,7 +10,6 @@ body {
  
 }
 
-
 .dropbutton {
    color: dodgerblue;
    margin: 0;
@@ -22,7 +21,7 @@ body {
    font-size: 16px;
    cursor: pointer;
  }
- 
+
  .dropbutton:hover {
    opacity: 1;
  }
@@ -614,17 +613,6 @@ body.MakeFloatingCart div.cart-icon-bottom{
    cursor: pointer
 } 
 
-#checkout{
-   border: 2px solid;
-   font-size: 13px;
-   font-weight: 700;
-   padding: 3px 9px;
-   position: absolute;
-   top: 137px;
-   left: 181px;
-   color: white;
-   display: none;
-}
 
 .product.large{
    width: 639px;
@@ -670,24 +658,6 @@ body.MakeFloatingCart div.cart-icon-bottom{
 
 .fa:hover {
    opacity: 0.7;
- letter-spacing: 1px;
-}
-
-.fa-facebook {
- background: #3B5998;
- color: white;
- letter-spacing: 1px;
-}
-
-.fa-twitter {
- background: #55ACEE;
- color: white;
- letter-spacing: 1px;
-}
-
-.fa-instagram {
- background: #125688;
- color: white;
  letter-spacing: 1px;
 }
 
